@@ -6,7 +6,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    text-align: center; /* 기본 중앙 정렬 */
+    text-align: center; /* 기본 콘텐츠 중앙 정렬 */
   }
   
   header {
@@ -25,7 +25,7 @@ body {
     max-width: 800px; /* 데스크톱에서 중앙 정렬된 800px 영역 */
     margin: 20px auto;
     padding: 0 15px;
-    text-align: left; /* 제목과 텍스트는 왼쪽 정렬 */
+    text-align: left; /* 텍스트는 항상 왼쪽 정렬 */
   }
   
   /* 날짜 스타일 */
@@ -49,7 +49,7 @@ body {
   /* 컨텐츠 블록 */
   .content-body {
     margin-bottom: 20px;
-    text-align: center; /* 이미지 중앙 정렬 */
+    text-align: center; /* 이미지는 중앙 정렬 */
   }
   
   .content-body img {
@@ -58,6 +58,12 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: contain;
+  }
+  
+  .content-body p {
+    margin: 10px auto;
+    text-align: left; /* 텍스트는 항상 왼쪽 정렬 */
+    padding: 0 15px; /* 모바일에서도 적절한 여백 추가 */
   }
   
   /* 반응형 스타일 */
@@ -80,7 +86,7 @@ body {
     .content-body p {
       max-width: 100%;
       margin: 10px auto;
-      text-align: left; /* 텍스트는 왼쪽 정렬 */
+      text-align: left; /* 텍스트 왼쪽 정렬 유지 */
     }
   }
   
