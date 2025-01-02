@@ -1,0 +1,79 @@
+/* 전역 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  /* 날짜 스타일 */
+  .content-date {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* 컨텐츠 제목 스타일 */
+  .content-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0073e6;
+  }
+  
+  /* 컨텐츠 블록 */
+  .content-body {
+    margin-bottom: 20px;
+  }
+  
+  .content-body img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .content-body p {
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+  }
+  
+  /* 반응형 스타일 */
+  @media (min-width: 768px) {
+    .content-body {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .content-body img {
+      max-width: 50%;
+    }
+  
+    .content-body p {
+      max-width: 50%;
+      padding: 0;
+    }
+  }
+  
