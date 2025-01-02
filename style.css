@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    text-align: center; /* 기본 중앙 정렬 */
   }
   
   header {
@@ -21,9 +22,10 @@ body {
   }
   
   main {
-    max-width: 900px;
+    max-width: 800px; /* 데스크톱에서 중앙 정렬된 800px 영역 */
     margin: 20px auto;
     padding: 0 15px;
+    text-align: left; /* 제목과 텍스트는 왼쪽 정렬 */
   }
   
   /* 날짜 스타일 */
@@ -33,6 +35,7 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    text-align: left; /* 날짜 왼쪽 정렬 */
   }
   
   /* 컨텐츠 제목 스타일 */
@@ -40,40 +43,44 @@ body {
     font-size: 1.25rem;
     margin-bottom: 10px;
     color: #0073e6;
+    text-align: left; /* 제목 왼쪽 정렬 */
   }
   
   /* 컨텐츠 블록 */
   .content-body {
     margin-bottom: 20px;
+    text-align: center; /* 이미지 중앙 정렬 */
   }
   
   .content-body img {
     display: block;
+    margin: 10px auto; /* 이미지 중앙 정렬 */
     max-width: 100%;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  
-  .content-body p {
-    margin: 10px 0 0 0;
-    padding: 0 10px;
+    height: auto;
+    object-fit: contain;
   }
   
   /* 반응형 스타일 */
   @media (min-width: 768px) {
-    .content-body {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
+    main {
+      max-width: 800px; /* 데스크톱에서 중앙 영역 */
+      margin: 20px auto;
     }
   
     .content-body img {
-      max-width: 50%;
+      max-width: 100%; /* 가로 긴 사진은 800px로 맞춤 */
+      height: auto;
+    }
+  
+    .content-body img.portrait {
+      max-height: 800px; /* 세로 긴 사진은 세로를 800px로 제한 */
+      width: auto;
     }
   
     .content-body p {
-      max-width: 50%;
-      padding: 0;
+      max-width: 100%;
+      margin: 10px auto;
+      text-align: left; /* 텍스트는 왼쪽 정렬 */
     }
   }
   
