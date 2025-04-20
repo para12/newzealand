@@ -66,6 +66,10 @@ main {
   padding: 0 15px; /* 모바일에서도 적절한 여백 추가 */
 }
 
+.hidden {
+  display: none;
+}
+
 /* 반응형 스타일 */
 @media (min-width: 768px) {
   main {
